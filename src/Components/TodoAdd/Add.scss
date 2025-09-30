@@ -1,0 +1,78 @@
+$background: #59c9a5;
+$blue: #465775;
+$green: #56e39f;
+$darkgreen: #5a9b81;
+$brown: #5b846f;
+$bbrown: #5b7866;
+$bbbrown: #5b6c5d;
+
+$heading-font: "Poppins", sans-serif;
+$body-font: "Inter", sans-serif;
+$accent-font: "Courier New", monospace;
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+* {
+  background-color: $background;
+  font-family: $heading-font;
+  padding:0;
+  margin:0;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+
+  .title {
+    font-size: 60px;
+  }
+}
+
+.enter {
+  display: flex;
+  justify-content: center;
+
+  .task {
+    width: 50vw;
+    height: 13vh;
+    border: none;
+    background-color: #fbd389;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 2rem;
+    padding: 10px;
+    text-decoration: none;
+
+    &::placeholder {
+      font-size: 1.3rem;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none; 
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $bbrown;
+    border-radius: 20px;
+    width: 8vw;
+    height: 16vh;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .Add {
+      width: 7vw;
+      height: 16vh;
+      border-radius: 20px;
+      background-color: $bbrown;
+    }
+  }
+}
